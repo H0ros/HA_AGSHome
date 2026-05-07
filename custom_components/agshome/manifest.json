@@ -1,0 +1,13 @@
+{
+  "domain": "agshome",
+  "name": "AGSHome Alarm",
+  "version": "1.0.0",
+  "documentation": "https://github.com/H0ros/HA_AGSHome",
+  "issue_tracker": "https://github.com/H0ros/HA_AGSHome/issues",
+  "requirements": ["tinytuya>=1.13.1"],
+  "dependencies": [],
+  "codeowners": ["@H0ros"],
+  "iot_class": "local_push",
+  "config_flow": true,
+  "integration_type": "device"
+}

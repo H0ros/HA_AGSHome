@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer la centrale AGSHome",
+        "description": "Renseignez les paramètres de connexion locale Tuya de votre centrale AGSHome.\n\nVoir le README pour obtenir le Device ID et la Local Key depuis le portail Tuya IoT.",
+        "data": {
+          "host": "Adresse IP de la centrale",
+          "device_id": "Device ID (Tuya)",
+          "local_key": "Local Key (Tuya)",
+          "protocol_version": "Version du protocole Tuya"
+        },
+        "data_description": {
+          "host": "L'adresse IP locale de votre centrale (ex: 192.168.1.xx). Assignez une IP fixe dans votre box.",
+          "device_id": "Identifiant unique du device sur la plateforme Tuya IoT (iot.tuya.com)",
+          "local_key": "Clé de chiffrement locale récupérée sur iot.tuya.com",
+          "protocol_version": "Essayez 3.3 en premier, puis 3.4 si la connexion échoue"
+        }
+      },
+      "camera": {
+        "title": "Caméra AGSHome (optionnel)",
+        "description": "Si vous avez une caméra AGSHome WiFi, renseignez ses paramètres ici.\n\nLaissez vide pour ignorer.",
+        "data": {
+          "camera_host": "Adresse IP de la caméra",
+          "camera_device_id": "Device ID de la caméra (Tuya)",
+          "camera_local_key": "Local Key de la caméra (Tuya)"
+        },
+        "data_description": {
+          "camera_host": "IP locale de la caméra (ex: 192.168.1.yy)",
+          "camera_device_id": "Device ID de la caméra sur iot.tuya.com",
+          "camera_local_key": "Local Key de la caméra sur iot.tuya.com"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter à la centrale AGSHome. Vérifiez l'IP, le Device ID, la Local Key et que la centrale est joignable.",
+      "cannot_connect_camera": "Impossible de se connecter à la caméra. Vérifiez ses paramètres ou laissez les champs vides pour ignorer.",
+      "unknown": "Erreur inattendue."
+    },
+    "abort": {
+      "already_configured": "Cette centrale AGSHome est déjà configurée."
+    }
+  }
+}

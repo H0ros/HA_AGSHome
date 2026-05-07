@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure AGSHome Alarm Hub",
+        "description": "Enter the local Tuya connection parameters for your AGSHome hub.\n\nSee the README to retrieve the Device ID and Local Key from the Tuya IoT portal.",
+        "data": {
+          "host": "Hub IP Address",
+          "device_id": "Device ID (Tuya)",
+          "local_key": "Local Key (Tuya)",
+          "protocol_version": "Tuya Protocol Version"
+        },
+        "data_description": {
+          "host": "Local IP address of your hub (e.g. 192.168.1.xx). Assign a static IP in your router.",
+          "device_id": "Unique device identifier on the Tuya IoT platform (iot.tuya.com)",
+          "local_key": "Local encryption key retrieved from iot.tuya.com",
+          "protocol_version": "Try 3.3 first, then 3.4 if the connection fails"
+        }
+      },
+      "camera": {
+        "title": "AGSHome Camera (optional)",
+        "description": "If you have an AGSHome WiFi camera, enter its parameters here.\n\nLeave empty to skip.",
+        "data": {
+          "camera_host": "Camera IP Address",
+          "camera_device_id": "Camera Device ID (Tuya)",
+          "camera_local_key": "Camera Local Key (Tuya)"
+        },
+        "data_description": {
+          "camera_host": "Local IP of the camera (e.g. 192.168.1.yy)",
+          "camera_device_id": "Camera Device ID on iot.tuya.com",
+          "camera_local_key": "Camera Local Key on iot.tuya.com"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the AGSHome hub. Check IP, Device ID, Local Key and ensure the hub is reachable on your local network.",
+      "cannot_connect_camera": "Unable to connect to the camera. Check its parameters or leave the fields empty to skip.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This AGSHome hub is already configured."
+    }
+  }
+}
