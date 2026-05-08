@@ -124,23 +124,6 @@ rm -rf temp
 
 ---
 
-## 🌐 Publier sur GitHub
-
-```bash
-git init ha-agshome && cd ha-agshome
-# Copier les fichiers ici
-git add .
-git commit -m "feat: initial AGSHome integration"
-git branch -M main
-git remote add origin https://github.com/H0ros/HA_AGSHome.git
-git push -u origin main
-git tag v1.0.0 && git push origin v1.0.0
-```
-
-Remplacez `VOTRE_USERNAME` dans `manifest.json` et `hacs.json`.
-
----
-
 ## 🏠 Utilisation — Exemples d'automatisation
 
 ### Armer automatiquement la nuit
